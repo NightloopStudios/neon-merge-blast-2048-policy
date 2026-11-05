@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Neon Merge Blast 2048 | Nightloop Studios</title>
+    <meta name="description" content="Official Privacy Policy for Neon Merge Blast 2048 by Nightloop Studios. 100% offline, zero-tracking, and on-device data retention.">
+    <style>
+        :root {
+            --bg-base: #0a0e17;
+            --bg-card: rgba(16, 24, 39, 0.78);
+            --bg-card-hover: rgba(22, 33, 54, 0.88);
+            --cyan-neon: #00e5ff;
+            --pink-neon: #ff007f;
+            --gold-neon: #ffd700;
+            --emerald-neon: #00f0a8;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border-glow: rgba(0, 229, 255, 0.22);
+            --border-glow-pink: rgba(255, 0, 127, 0.25);
+            --card-radius: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-base);
+            background-image: 
+                radial-gradient(circle at 15% 15%, rgba(0, 229, 255, 0.08) 0%, transparent 45%),
+                radial-gradient(circle at 85% 65%, rgba(255, 0, 127, 0.07) 0%, transparent 50%),
+                radial-gradient(circle at 50% 90%, rgba(255, 215, 0, 0.05) 0%, transparent 40%);
+            background-attachment: fixed;
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.68;
+            padding: 32px 16px 80px 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 880px;
+            margin: 0 auto;
+        }
+
+        /* Hero Header */
+        header {
+            text-align: center;
+            padding: 48px 24px 36px 24px;
+            position: relative;
+        }
+
+        .brand-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            border-radius: 9999px;
+            background: rgba(0, 229, 255, 0.1);
+            border: 1px solid var(--border-glow);
+            color: var(--cyan-neon);
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            box-shadow: 0 0 16px rgba(0, 229, 255, 0.15);
+        }
+
+        .brand-badge::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--cyan-neon);
+            box-shadow: 0 0 8px var(--cyan-neon);
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 2.85rem);
+            font-weight: 900;
+            letter-spacing: -0.02em;
+            line-height: 1.15;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #ffffff 30%, var(--cyan-neon) 80%, var(--pink-neon) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        .meta-strip {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 24px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+
+        .meta-item strong {
+            color: var(--text-secondary);
+        }
+
+        /* Quick Summary Grid */
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin: 36px 0 48px 0;
+        }
+
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glow);
+            border-radius: var(--card-radius);
+            padding: 22px 20px;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .summary-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(0, 229, 255, 0.45);
+            box-shadow: 0 8px 24px rgba(0, 229, 255, 0.12);
+        }
+
+        .summary-card.pink-accent {
+            border-color: var(--border-glow-pink);
+        }
+
+        .summary-card.pink-accent:hover {
+            border-color: rgba(255, 0, 127, 0.5);
+            box-shadow: 0 8px 24px rgba(255, 0, 127, 0.14);
+        }
+
+        .summary-icon {
+            font-size: 1.75rem;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .summary-title {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+        }
+
+        .summary-desc {
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        /* Glassmorphism Article Sections */
+        .policy-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: var(--card-radius);
+            padding: 32px;
+            margin-bottom: 24px;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .policy-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--cyan-neon), transparent);
+        }
+
+        .policy-card.pink-stripe::before {
+            background: linear-gradient(180deg, var(--pink-neon), transparent);
+        }
+
+        .policy-card.gold-stripe::before {
+            background: linear-gradient(180deg, var(--gold-neon), transparent);
+        }
+
+        .policy-card.emerald-stripe::before {
+            background: linear-gradient(180deg, var(--emerald-neon), transparent);
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h2 span.section-num {
+            font-size: 0.85rem;
+            font-weight: 900;
+            padding: 2px 8px;
+            border-radius: 6px;
+            background: rgba(0, 229, 255, 0.12);
+            color: var(--cyan-neon);
+            border: 1px solid rgba(0, 229, 255, 0.3);
+        }
+
+        .pink-stripe h2 span.section-num {
+            background: rgba(255, 0, 127, 0.12);
+            color: var(--pink-neon);
+            border-color: rgba(255, 0, 127, 0.3);
+        }
+
+        .gold-stripe h2 span.section-num {
+            background: rgba(255, 215, 0, 0.12);
+            color: var(--gold-neon);
+            border-color: rgba(255, 215, 0, 0.3);
+        }
+
+        .emerald-stripe h2 span.section-num {
+            background: rgba(0, 240, 168, 0.12);
+            color: var(--emerald-neon);
+            border-color: rgba(0, 240, 168, 0.3);
+        }
+
+        p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 16px;
+        }
+
+        li {
+            position: relative;
+            padding-left: 24px;
+            color: var(--text-secondary);
+            font-size: 0.92rem;
+            margin-bottom: 10px;
+        }
+
+        li::before {
+            content: "▹";
+            position: absolute;
+            left: 4px;
+            color: var(--cyan-neon);
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+
+        .pink-stripe li::before {
+            color: var(--pink-neon);
+        }
+
+        .gold-stripe li::before {
+            color: var(--gold-neon);
+        }
+
+        .emerald-stripe li::before {
+            color: var(--emerald-neon);
+        }
+
+        .highlight-box {
+            background: rgba(0, 0, 0, 0.35);
+            border: 1px dashed rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-top: 16px;
+        }
+
+        .highlight-box strong {
+            color: #ffffff;
+        }
+
+        /* Footer & Contact CTA */
+        footer {
+            margin-top: 48px;
+            text-align: center;
+            padding: 36px 24px;
+            border-radius: var(--card-radius);
+            background: linear-gradient(180deg, rgba(16, 24, 39, 0.5) 0%, rgba(10, 14, 23, 0.95) 100%);
+            border: 1px solid var(--border-glow);
+            box-shadow: 0 0 32px rgba(0, 229, 255, 0.08);
+        }
+
+        .footer-title {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        .footer-desc {
+            font-size: 0.92rem;
+            color: var(--text-secondary);
+            max-width: 520px;
+            margin: 0 auto 24px auto;
+        }
+
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, var(--cyan-neon) 0%, #0099ff 100%);
+            color: #050b14;
+            font-weight: 800;
+            font-size: 0.95rem;
+            padding: 14px 28px;
+            border-radius: 9999px;
+            text-decoration: none;
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.35);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 28px rgba(0, 229, 255, 0.55);
+            filter: brightness(1.08);
+        }
+
+        .copyright-text {
+            margin-top: 32px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 16px 12px 60px 12px;
+            }
+            .policy-card {
+                padding: 24px 18px;
+            }
+            .meta-strip {
+                gap: 12px;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Hero Header -->
+        <header>
+            <div class="brand-badge">Nightloop Studios Compliance</div>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">Neon Merge Blast 2048 &mdash; Fast-paced cyberpunk arcade puzzle gaming built with privacy-first engineering.</p>
+            <div class="meta-strip">
+                <div class="meta-item">Application: <strong>Neon Merge Blast 2048</strong></div>
+                <div class="meta-item">Developer: <strong>Nightloop Studios</strong></div>
+                <div class="meta-item">Effective Date: <strong>November 2026</strong></div>
+                <div class="meta-item">Platform: <strong>Google Play Store</strong></div>
+            </div>
+        </header>
+
+        <!-- Quick Summary Grid -->
+        <div class="summary-grid">
+            <div class="summary-card">
+                <span class="summary-icon">🛡️</span>
+                <div class="summary-title">Zero Personal Tracking</div>
+                <div class="summary-desc">No collection, storage, or transmission of personal identifiers, emails, names, or location data.</div>
+            </div>
+            <div class="summary-card pink-accent">
+                <span class="summary-icon">📵</span>
+                <div class="summary-title">No Ads or External SDKs</div>
+                <div class="summary-desc">No third-party advertising networks (AdMob/Unity), user trackers, or cloud analytics SDKs bundled.</div>
+            </div>
+            <div class="summary-card">
+                <span class="summary-icon">💾</span>
+                <div class="summary-title">100% Local Storage</div>
+                <div class="summary-desc">Scores, game states, and player tags live strictly on your device's private SQLite / Room sandbox.</div>
+            </div>
+            <div class="summary-card pink-accent">
+                <span class="summary-icon">⚡</span>
+                <div class="summary-title">Offline First Design</div>
+                <div class="summary-desc">Complete gameplay loop is fully playable offline without any Wi-Fi or cellular network connection.</div>
+            </div>
+        </div>
+
+        <!-- Section 1: Overview & Commitment -->
+        <div class="policy-card">
+            <h2><span class="section-num">01</span> Commitment to User Privacy</h2>
+            <p>At <strong>Nightloop Studios</strong>, we believe that interactive games should deliver engaging arcade entertainment without monetizing your personal data or monitoring your habits. This Privacy Policy details our operational commitments for <strong>Neon Merge Blast 2048</strong> on the Google Play Store.</p>
+            <p>We do not operate remote user tracking servers, cloud database syncs, or monetization analytics. The application operates as a standalone, client-side mobile entertainment program designed to protect your privacy by architectural default.</p>
+        </div>
+
+        <!-- Section 2: Zero Personal Data Collection -->
+        <div class="policy-card pink-stripe">
+            <h2><span class="section-num">02</span> Zero Personal Data Collection & Transmission</h2>
+            <p><strong>Neon Merge Blast 2048 does NOT collect, harvest, transmit, share, or sell any personal information.</strong> Specifically, the game never accesses or requests:</p>
+            <ul>
+                <li><strong>Personal Identifiers:</strong> Legal names, email addresses, phone numbers, home addresses, or physical identities.</li>
+                <li><strong>Sensitive Telemetry:</strong> Precise or approximate GPS location, IP geofencing, or cellular tower triangulation.</li>
+                <li><strong>Hardware & Device Data:</strong> IMEI, Android Advertising ID (AAID), MAC address, or serial numbers.</li>
+                <li><strong>Media & Device Storage:</strong> Photos, camera capture, microphone audio, contacts, or local file systems.</li>
+                <li><strong>Financial Information:</strong> Payment accounts, credit cards, or banking credentials (all transactions, if any are offered in future updates, are handled exclusively via Google Play In-App Billing APIs).</li>
+            </ul>
+        </div>
+
+        <!-- Section 3: On-Device Data Storage & Persistence -->
+        <div class="policy-card gold-stripe">
+            <h2><span class="section-num">03</span> Local On-Device Data & Architecture</h2>
+            <p>To deliver seamless arcade progression, high-score leaderboards, and session continuation, <em>Neon Merge Blast 2048</em> utilizes private, device-sandboxed storage mechanisms provided by the Android Operating System:</p>
+            <ul>
+                <li><strong>Android Room Database / SQLite:</strong> Stores local high scores, player rankings, arcade session timestamps, and custom player arcade nicknames entered into the game client.</li>
+                <li><strong>Android SharedPreferences / DataStore:</strong> Stores user-selected gameplay preferences, audio toggles (sound effects and synthesized synth music volume), high-score records, and powerup inventory balances (Bomb and Zap items).</li>
+                <li><strong>WebView Local Storage:</strong> HTML5 / Phaser engine caches game asset textures, responsive UI states, and active board matrix grids on the local device runtime.</li>
+            </ul>
+            <div class="highlight-box">
+                <strong>Crucial Architecture Guarantee:</strong> All local database entries remain entirely confined to the application's isolated sandboxed storage directory (`/data/data/com.example/` or equivalent package root). This data is never synchronized to cloud servers, external drives, or third-party servers.
+            </div>
+        </div>
+
+        <!-- Section 4: Third-Party SDKs & Network Access -->
+        <div class="policy-card">
+            <h2><span class="section-num">04</span> Third-Party Services & Network Access</h2>
+            <p>Many mobile games integrate external behavioral trackers, ad mediation stacks, or remote diagnostic monitors. <em>Neon Merge Blast 2048</em> strictly excludes these components:</p>
+            <ul>
+                <li><strong>No Advertising SDKs:</strong> The application does not integrate Google AdMob, Unity Ads, AppLovin, ironSource, or any ad mediation frameworks. You will encounter zero targeted or banner ads.</li>
+                <li><strong>No Analytics SDKs:</strong> We do not embed Firebase Analytics, Google Analytics for Mobile, Mixpanel, AppsFlyer, or Flurry.</li>
+                <li><strong>Auxiliary Local Network Capabilities:</strong> Any baseline networking permissions declared by the platform build system (`android.permission.INTERNET` or `ACCESS_NETWORK_STATE`) are auxiliary to Android's modern internal WebView asset pipeline. Gameplay is completely functional without active internet, Wi-Fi, or cellular data.</li>
+            </ul>
+        </div>
+
+        <!-- Section 5: Data Retention & User Deletion Rights -->
+        <div class="policy-card emerald-stripe">
+            <h2><span class="section-num">05</span> Data Retention & Your Deletion Rights</h2>
+            <p>Because all gameplay data is retained strictly on your physical device, you maintain 100% control over its lifecycle at all times. You have the unilateral right to view, reset, or permanently purge this data at will:</p>
+            <ul>
+                <li><strong>In-Game Leaderboard Reset:</strong> You can clear all recorded high scores and session ranks directly within the game settings by triggering the <em>"Reset Leaderboards"</em> function.</li>
+                <li><strong>Android System Settings Wipe:</strong> You can completely purge all database tables, saved matrices, and preferences at any time by navigating on your Android device to: <code>Settings &gt; Apps &gt; Neon Merge Blast 2048 &gt; Storage &amp; Cache &gt; Clear Storage / Clear Data</code>.</li>
+                <li><strong>Uninstalling the Game:</strong> Removing the app from your device immediately prompts Android to delete the application's private sandbox folder, permanently erasing all associated local records without residual data left on your hardware.</li>
+            </ul>
+        </div>
+
+        <!-- Section 6: Children's Privacy & COPPA Compliance -->
+        <div class="policy-card pink-stripe">
+            <h2><span class="section-num">06</span> Children’s Privacy & COPPA Compliance</h2>
+            <p><strong>Neon Merge Blast 2048</strong> is a family-friendly puzzle arcade title accessible to general audiences of all ages. Protecting the privacy of young players is of paramount importance to Nightloop Studios:</p>
+            <ul>
+                <li>We strictly comply with the <strong>Children's Online Privacy Protection Act (COPPA)</strong> and Google Play Families Policies.</li>
+                <li>The application does not collect, request, process, or transmit personal data from children under the age of 13 (or under the applicable age of digital consent in any respective jurisdiction).</li>
+                <li>The game does not include behavioral targeting, social network sharing, direct-messaging chat rooms, or behavioral tracking hooks that could facilitate child identity discovery.</li>
+            </ul>
+            <p>If a parent or guardian believes their child has somehow provided personal data through external correspondence, please contact us immediately so we can promptly inspect and delete any records from our support inbox.</p>
+        </div>
+
+        <!-- Section 7: Security & Changes -->
+        <div class="policy-card">
+            <h2><span class="section-num">07</span> Security Architecture & Policy Updates</h2>
+            <p>We leverage industry-standard Android application sandboxing, non-exportable ContentProviders, and locked JavaScript bridge interfaces to protect on-device data integrity against cross-site scripting (XSS) and unauthorized cross-application data extraction.</p>
+            <p>We reserve the right to revise this Privacy Policy periodically to reflect app enhancements or statutory updates. Any updates will be published with an updated "Effective Date" directly within this document or within our Google Play Store listing.</p>
+        </div>
+
+        <!-- Footer / Contact CTA -->
+        <footer>
+            <div class="footer-title">Questions or Data Privacy Inquiries?</div>
+            <p class="footer-desc">If you have any questions, feedback, or verification requests regarding our privacy standards or technical architecture, our engineering team is readily available.</p>
+            <a href="mailto:hk.nightloop@gmail.com?subject=Neon%20Merge%20Blast%202048%20-%20Privacy%20Inquiry" class="contact-btn">
+                <span>✉️</span> Contact Nightloop Studios
+            </a>
+            <div class="copyright-text">
+                &copy; 2026 Nightloop Studios. All rights reserved. &bull; Neon Merge Blast 2048 is an independent arcade title published for the Google Play Store.
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
